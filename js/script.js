@@ -4,10 +4,12 @@ const formElement = document.getElementById('form')
 const selectElement = document.getElementById('select')
 const scoreElement = document.getElementById('score-message')
 const gridElement = document.getElementById('grid')
+const button = document.querySelector('button')
+const message = document.getElementById('user-message')
 
 /*Preparo una variabile che tenga il punteggio dell'utente */
 
-
+button.innerText = 'Play'
 
 
 formElement.addEventListener('submit', (e) => {
@@ -38,7 +40,7 @@ formElement.addEventListener('submit', (e) => {
     let totalCells = rows * cols
 
     let score = 0
-    scoreElement.innerText = score
+    scoreElement.innerText = 'Punteggio: ' + score
 
     while (gridElement.firstChild) {
         gridElement.removeChild(gridElement.firstChild);
@@ -67,7 +69,7 @@ formElement.addEventListener('submit', (e) => {
             cell.classList.add('clicked')
             console.log(i)
             /*Incremento il punteggio al click sulla cella*/
-            scoreElement.innerText = ++score
+            scoreElement.innerText = `Punteggio: ${++score}`
 
             /* Controllo se il numero della cella è presente nell'array di bombe*/
 
@@ -77,15 +79,17 @@ formElement.addEventListener('submit', (e) => {
 
             if (isBomb) {
                 cell.classList.add('bomb')
-                console.log(`hai perso con un un punteggio di ${score}`)
-                alert('Hai perso! Il tuo punteggio è ' + score)
+                button.innerText = 'Ricomincia'
                 isGameOver = true;
+                message.innerText = `Hai perso con un un punteggio di: ${score}`
+                
 
             } else {
-                console.log(score)
                 if (score === maxPoints){
                     isGameOver = true
                     console.log('Hai vinto')
+                    button.innerText = 'Ricomincia'
+                    message.innerText = `Hai vinto`
                 }
                 
             }
