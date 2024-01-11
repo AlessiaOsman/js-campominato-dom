@@ -73,7 +73,9 @@ img{
     font-weight: bold;
 }
 
-.cell.clicked{
+#grid .cell.clicked{
     background-color: lightblue;
     color: #000000;
+    cursor: not-allowed;
 }
+
