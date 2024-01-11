@@ -79,3 +79,9 @@ img{
     cursor: not-allowed;
 }
 
+#grid .cell.clicked.bomb{
+    background-color: red;
+}
+
+
+

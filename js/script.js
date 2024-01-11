@@ -61,8 +61,22 @@ formElement.addEventListener('submit', (e) => {
             cell.classList.add('clicked')
             console.log(i)
             /*Incremento il punteggio al click sulla cella*/
-            score++
+            ++score
             console.log(score)
+
+            /* Controllo se il numero della cella è presente nell'array di bombe*/
+
+            const isBomb = bombs.includes(i)
+
+            /* Se è presente aggiungo la classe bomb per far diventare la cella rossa e scrivo in console messaggio hai perso con punteggio*/
+
+            if (isBomb){
+                cell.classList.add('bomb')   
+                console.log(`hai perso con un un punteggio di ${score}`) 
+                
+            } else {    
+                console.log(score)
+            }
 
         })
 
@@ -72,9 +86,6 @@ formElement.addEventListener('submit', (e) => {
 
     }
 
-
-
-    console.log(userChoice)
 
 
 
