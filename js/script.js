@@ -10,12 +10,14 @@ const message = document.getElementById('user-message')
 /*Preparo una variabile che tenga il punteggio dell'utente */
 
 button.innerText = 'Play'
+scoreElement.innerText = 'Punteggio: 0'
 
 
 formElement.addEventListener('submit', (e) => {
     e.preventDefault()
 
     /* Inserisco flag per terminare la partita */
+    message.innerText = ''
 
     let isGameOver = false
 

@@ -27,6 +27,10 @@ h1{
     margin-bottom: 20px;
 }
 
+p{
+    width: 15%;
+}
+
 /*Utilities*/
 
 .flex{

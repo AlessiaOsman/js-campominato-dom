@@ -28,5 +28,6 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 - difficoltà 1 ⇒ 100 caselle, con un numero compreso tra 1 e 100, divise in 10 caselle per 10 righe;
 - difficoltà 2 ⇒ 81 caselle, con un numero compreso tra 1 e 81, divise in 9 caselle per 9 righe;
 - difficoltà 3 ⇒ 49 caselle, con un numero compreso tra 1 e 49, divise in 7 caselle per 7 righe;
-#SUPER BONUS
+
+## SUPER BONUS
 Quando l'utente clicca una bomba, scopriamo tutte le caselle del tabellone, colorando di rosso tutte le bombe
