@@ -10,7 +10,6 @@ const gridElement = document.getElementById('grid')
 let score = 0
 
 
-
 formElement.addEventListener('submit', (e) => {
     e.preventDefault()
 
@@ -39,6 +38,13 @@ formElement.addEventListener('submit', (e) => {
     while (gridElement.firstChild) {
         gridElement.removeChild(gridElement.firstChild);
     }
+
+    /* Richiamo la funzione createbomb e stampo in console*/
+
+    const totalbombs = createBombs(totalCells, 16)
+    console.log(totalbombs)
+
+    
 
     for (let i = 1; i <= totalCells; i++) {
 
