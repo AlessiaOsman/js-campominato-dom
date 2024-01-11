@@ -1,0 +1,79 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Generics*/
+
+header{
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+
+body{
+    background-color: blue;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+/*Utilities*/
+
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.c-100{
+    width: calc(100%/10);
+    height: calc(100%/10);
+}
+
+.c-81{
+    width: calc(100%/9);
+    height: calc(100%/9);
+}
+
+.c-49{
+    width: calc(100%/7);
+    height: calc(100%/7);
+}
+
+
+/*Grid*/
+
+#grid{
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#grid .cell{
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cell.clicked{
+    background-color: lightblue;
+    color: #000000;
+}

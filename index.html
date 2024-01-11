@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griglia Dinamica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/functions.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <header class="flex justify-between align-center">
+        <div class="flex align-center">
+            <img src="./img/mobile-logo.png" alt="logo">
+            <h1>Campo Minato</h1>
+        </div>
+        <form id="form" class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12 d-flex">
+                <select class="form-select" id="select">
+                    <option value="1">Big</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Small</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Play</button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <div id="grid">
+        
+        </div>
+    </main>
+</body>
+
+</html>
