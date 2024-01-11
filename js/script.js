@@ -9,6 +9,9 @@ const gridElement = document.getElementById('grid')
 
 let score = 0
 
+//Quando l'utente clicca su una cella, verifichiamo se ha calpestato una bomba, controllando se il numero di cella è presente nell'array di bombe. 
+//Se si, la cella diventa rossa (raccogliamo il punteggio e scriviamo in console che la partita termina) altrimenti diventa azzurra e dobbiamo incrementare il punteggio.
+
 
 formElement.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -41,8 +44,12 @@ formElement.addEventListener('submit', (e) => {
 
     /* Richiamo la funzione createbomb e stampo in console*/
 
-    const totalbombs = createBombs(totalCells, 16)
-    console.log(totalbombs)
+    const totalBombsNumber = 16
+
+
+
+    const bombs = createBombs(totalCells, totalBombsNumber)
+    console.log(bombs)
 
     
 

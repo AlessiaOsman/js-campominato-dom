@@ -18,11 +18,12 @@ const createCell = (className) => {
  */
 
 const createBombs = (max, totalNumber) => {
+
+    const bombs = []
     
-    let bombs = []
-    while (bombs.length < totalNumber){
+    while (bombs.length < totalNumber ){
         const randomNumber = Math.floor(Math.random() * max) +1;
-        bombs.push(randomNumber)
+        if (!bombs.includes(randomNumber)) bombs.push(randomNumber)
     }
 
     return bombs
